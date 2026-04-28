@@ -271,15 +271,17 @@ img {
 .history-feature {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(360px, 0.95fr) minmax(320px, 0.8fr);
+  grid-template-columns: minmax(560px, 0.95fr) minmax(320px, 0.8fr);
   align-items: center;
-  gap: 64px;
-  min-height: 410px;
+  gap: 84px;
+  min-height: 500px;
 }
 
 .history-photo {
   align-self: start;
-  margin-top: -42px;
+  width: min(760px, 52vw);
+  margin-top: -56px;
+  margin-left: calc((100vw - min(100vw - 48px, 1220px)) / -2);
   border-radius: 0 0 24px 0;
   overflow: hidden;
   box-shadow: 0 26px 48px rgba(20, 8, 6, 0.34);
@@ -287,7 +289,7 @@ img {
 
 .history-photo img {
   width: 100%;
-  aspect-ratio: 1.46;
+  aspect-ratio: 1.42;
   height: auto;
   object-fit: cover;
   object-position: center;
@@ -808,12 +810,15 @@ img {
   }
 
   .history-feature {
+    grid-template-columns: 1fr;
     gap: 38px;
   }
 
   .history-photo {
-    max-width: 680px;
+    width: min(720px, 100%);
+    max-width: none;
     margin-top: -34px;
+    margin-left: 0;
   }
 }
 
