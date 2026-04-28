@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "db:init": "node scripts/init-db.mjs",
+    "db:leads": "node scripts/list-leads.mjs",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },

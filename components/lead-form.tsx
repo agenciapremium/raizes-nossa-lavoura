@@ -6,7 +6,7 @@ import { CheckCircle2, Loader2, MessageCircle } from "lucide-react";
 type FormState = "idle" | "submitting" | "success" | "error";
 
 type LeadFormProps = {
-  variant: "overlay" | "mobile";
+  variant: "footer";
 };
 
 export function LeadForm({ variant }: LeadFormProps) {
