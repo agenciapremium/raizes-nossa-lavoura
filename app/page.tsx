@@ -62,46 +62,62 @@ export default function Home() {
             <article className="solution-card">
               <Wheat aria-hidden="true" />
               <h3>Nutrição Animal</h3>
+              <p>Rações, suplementos e orientação para fortalecer o rebanho.</p>
             </article>
             <article className="solution-card">
               <HeartPulse aria-hidden="true" />
               <h3>Saúde Animal</h3>
+              <p>Vacinas, medicamentos e cuidados para manter a criação segura.</p>
             </article>
             <article className="solution-card">
               <ShieldCheck aria-hidden="true" />
               <h3>Herbicidas e Defensivos</h3>
+              <p>Produtos certos para proteger a lavoura com responsabilidade.</p>
             </article>
             <article className="solution-card">
               <Wrench aria-hidden="true" />
               <h3>Arames e Estacas</h3>
+              <p>Estrutura para cercas, manejo e manutenção da propriedade.</p>
             </article>
             <article className="solution-card solution-card--wide">
               <Tractor aria-hidden="true" />
               <h3>Maquinários e Equipamentos</h3>
+              <p>Ferramentas e equipamentos para facilitar a rotina no campo.</p>
             </article>
           </div>
         </div>
       </section>
 
       <section className="history-section" id="historia">
-        <div className="history-image" aria-hidden="true">
-          <img
-            src="/assets/handshake-clean.webp"
-            alt=""
-            width="760"
-            height="520"
-          />
-        </div>
-        <div className="section-shell history-content">
-          <div className="history-copy">
-            <p className="eyebrow">Antes Casa da Lavoura</p>
-            <h2>Uma história construída junto com o campo de Jaru.</h2>
+        <div className="section-shell history-feature">
+          <div className="history-photo">
+            <img
+              src="/assets/handshake-clean.webp"
+              alt="Aperto de mãos no campo"
+              width="760"
+              height="520"
+            />
+          </div>
+
+          <div className="history-intro">
+            <PackageCheck aria-hidden="true" />
             <p>
-              A Nossa Lavoura tem mais de quatro décadas de presença regional.
-              Nossa história é feita com dedicação, compromisso e confiança ao
-              lado de quem produz.
+              Em Jaru, a <strong>verdadeira história do agronegócio</strong> é
+              contada por mãos que trabalham a terra e o rebanho.
             </p>
           </div>
+        </div>
+
+        <div className="section-shell history-story">
+          <p>
+            A Nossa Lavoura, antes conhecida como Casa da Lavoura, tem sido essa
+            parceira fiel por mais de quatro décadas, acompanhando o produtor em
+            cada etapa da sua jornada.
+          </p>
+          <p>
+            Nossa história é a sua história, construída com dedicação,
+            conhecimento e compromisso com o produtor.
+          </p>
         </div>
       </section>
 
@@ -245,12 +261,12 @@ export default function Home() {
       <footer className="site-footer">
         <div className="section-shell footer-grid">
           <a className="brand-mark" href="#inicio" aria-label="Nossa Lavoura">
-            <PackageCheck aria-hidden="true" />
-            <span>
-              Nossa
-              <br />
-              Lavoura
-            </span>
+            <img
+              src="/assets/logo_nossa_lavoura.webp"
+              alt="Nossa Lavoura"
+              width="220"
+              height="88"
+            />
           </a>
           <div className="social-links">
             <a href="https://www.instagram.com/" aria-label="Instagram">
