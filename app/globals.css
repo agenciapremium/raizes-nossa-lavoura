@@ -261,26 +261,38 @@ img {
   z-index: 2;
   overflow: visible;
   margin-top: -86px;
-  padding: 0 0 92px;
+  padding: 0 0 168px;
   background:
-    linear-gradient(90deg, rgba(68, 27, 20, 0.1) 0%, rgba(68, 27, 20, 0.56) 45%, rgba(68, 27, 20, 0.92) 100%),
+    linear-gradient(90deg, rgba(68, 27, 20, 0.04) 0%, rgba(68, 27, 20, 0.58) 46%, rgba(68, 27, 20, 0.94) 100%),
     url("/assets/bg_secao_3.webp") center / cover no-repeat,
     var(--brown);
 }
 
+.history-section::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: min(42vw, 520px);
+  height: 150px;
+  background: var(--cream);
+  border-top-left-radius: 100% 86%;
+  content: "";
+}
+
 .history-feature {
   position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: minmax(560px, 0.95fr) minmax(320px, 0.8fr);
+  grid-template-columns: minmax(590px, 0.98fr) minmax(320px, 0.78fr);
   align-items: center;
-  gap: 84px;
-  min-height: 500px;
+  gap: 70px;
+  min-height: 560px;
 }
 
 .history-photo {
   align-self: start;
-  width: min(760px, 52vw);
-  margin-top: -56px;
+  width: min(790px, 54vw);
+  margin-top: -72px;
   margin-left: calc((100vw - min(100vw - 48px, 1220px)) / -2);
   border-radius: 0 0 24px 0;
   overflow: hidden;
@@ -296,7 +308,7 @@ img {
 }
 
 .history-intro {
-  max-width: 440px;
+  max-width: 390px;
   color: var(--cream);
   text-align: left;
 }
@@ -313,7 +325,7 @@ img {
 
 .history-intro p {
   margin: 0;
-  font-size: clamp(1.35rem, 2.05vw, 2rem);
+  font-size: clamp(1.25rem, 1.72vw, 1.72rem);
   line-height: 1.02;
   font-weight: 300;
 }
@@ -323,17 +335,20 @@ img {
 }
 
 .history-story {
+  position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 56px;
-  padding-top: 66px;
+  gap: 20px;
+  max-width: 980px;
+  padding-top: 74px;
   color: var(--cream-2);
+  text-align: center;
 }
 
 .history-story p {
   margin: 0;
-  font-size: clamp(1.15rem, 1.65vw, 1.55rem);
-  line-height: 1.22;
+  font-size: clamp(1.2rem, 1.72vw, 1.65rem);
+  line-height: 1.1;
 }
 
 .history-story p:first-child {
@@ -346,52 +361,63 @@ img {
 
 .trust-section {
   position: relative;
-  padding: 88px 0 96px;
+  z-index: 3;
+  padding: 0 0 108px;
   background: var(--cream);
 }
 
 .trust-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 26px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  transform: translateY(-82px);
 }
 
 .trust-card {
-  min-height: 286px;
-  padding: 34px 32px;
-  border-radius: 8px;
+  position: relative;
+  min-height: 330px;
+  padding: 72px 28px 30px;
+  border-radius: 0 0 18px 0;
   box-shadow: var(--shadow);
 }
 
 .trust-card svg {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 24px;
+  position: absolute;
+  top: -28px;
+  left: 28px;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 0;
+  padding: 14px;
+  border-radius: 50%;
+  color: var(--brown);
+  background: var(--green);
 }
 
 .trust-card h3 {
   margin: 0;
-  font-size: clamp(1.65rem, 2.2vw, 2.35rem);
-  line-height: 1.05;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 0.98;
 }
 
 .trust-card p {
-  margin: 22px 0 0;
-  font-size: clamp(1rem, 1.25vw, 1.2rem);
-  line-height: 1.2;
+  margin: 24px 0 0;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.12;
 }
 
 .trust-card--green {
   background: var(--green);
 }
 
+.trust-card--green svg {
+  color: var(--brown);
+  background: var(--cream);
+}
+
 .trust-card--brown {
   color: var(--cream);
   background: var(--brown);
-}
-
-.trust-card--cream {
-  background: var(--white);
 }
 
 .products-section {
@@ -487,11 +513,14 @@ img {
   background: var(--green);
 }
 
-.map-frame img {
+.map-frame iframe {
+  display: block;
   width: 100%;
+  min-height: 410px;
   aspect-ratio: 1.24;
+  border: 0;
   border-radius: 8px;
-  object-fit: cover;
+  background: var(--white);
 }
 
 .testimonials-section {
@@ -792,9 +821,13 @@ img {
     object-fit: contain;
   }
 
-  .trust-grid,
   .testimonial-grid {
     grid-template-columns: 1fr;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
   }
 
   .products-grid {
@@ -840,7 +873,6 @@ img {
   }
 
   .solutions-section,
-  .trust-section,
   .products-section,
   .testimonials-section,
   .cta-section {
@@ -881,6 +913,15 @@ img {
     min-height: 0;
   }
 
+  .trust-section {
+    padding-bottom: 76px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+    transform: translateY(-54px);
+  }
+
   .products-copy h2,
   .cta-copy h2 {
     line-height: 0.96;
@@ -894,6 +935,10 @@ img {
   .map-frame {
     padding: 14px;
     border-radius: 28px;
+  }
+
+  .map-frame iframe {
+    min-height: 320px;
   }
 
   .lead-form--footer {

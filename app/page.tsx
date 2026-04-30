@@ -2,11 +2,14 @@ import {
   ArrowDown,
   Camera,
   Clock,
+  HandHeart,
   Handshake,
   HeartPulse,
+  ListChecks,
   MapPin,
   PackageCheck,
   Phone,
+  Ribbon,
   ShieldCheck,
   Star,
   ThumbsUp,
@@ -124,7 +127,7 @@ export default function Home() {
       <section className="trust-section">
         <div className="section-shell trust-grid">
           <article className="trust-card trust-card--green">
-            <ShieldCheck aria-hidden="true" />
+            <Ribbon aria-hidden="true" />
             <h3>Tradição e Confiança</h3>
             <p>
               Mais de 40 anos de atuação com credibilidade construída no campo.
@@ -138,11 +141,18 @@ export default function Home() {
               próximos.
             </p>
           </article>
-          <article className="trust-card trust-card--cream">
-            <Handshake aria-hidden="true" />
-            <h3>Atendimento Parceiro</h3>
+          <article className="trust-card trust-card--brown">
+            <HandHeart aria-hidden="true" />
+            <h3>Verdadeiro Parceiro</h3>
             <p>
-              Indicamos soluções de acordo com a necessidade de cada produtor.
+              Enquanto outros vêm e vão, nós sempre estivemos aqui.
+            </p>
+          </article>
+          <article className="trust-card trust-card--brown">
+            <ListChecks aria-hidden="true" />
+            <h3>Valorização das Pessoas</h3>
+            <p>
+              Nosso maior patrimônio são nossos clientes e colaboradores.
             </p>
           </article>
         </div>
@@ -181,7 +191,13 @@ export default function Home() {
           </div>
 
           <div className="map-frame">
-            <img src="/assets/map.webp" alt="Mapa da Nossa Lavoura em Jaru" />
+            <iframe
+              title="Mapa da Nossa Lavoura em Jaru"
+              src="https://maps.google.com/maps?hl=pt-BR&q=Nossa%20Lavoura%20-%20Jaru%2C%20Av.%20J.K.%2C%201121%20-%20Centro%2C%20Jaru%20RO&z=17&iwloc=B&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
