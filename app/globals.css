@@ -196,20 +196,21 @@ img {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 28px;
-  max-width: 1040px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1120px;
   margin: 62px auto 0;
 }
 
 .solution-card {
   position: relative;
-  grid-column: span 3;
-  display: flex;
-  min-height: 196px;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 72px 30px 28px;
+  display: grid;
+  min-height: 174px;
+  grid-template-columns: 58px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  align-content: start;
+  gap: 12px 20px;
+  padding: 28px;
   border: 1px solid rgba(68, 27, 20, 0.08);
   border-radius: 8px;
   background: var(--cream);
@@ -223,9 +224,8 @@ img {
 }
 
 .solution-card svg {
-  position: absolute;
-  top: 24px;
-  left: 30px;
+  grid-row: 1 / span 2;
+  align-self: start;
   width: 54px;
   height: 54px;
   padding: 13px;
@@ -236,24 +236,23 @@ img {
 }
 
 .solution-card h3 {
+  align-self: center;
   margin: 0;
-  max-width: 310px;
-  font-size: clamp(1.45rem, 1.8vw, 1.85rem);
-  line-height: 1.08;
+  font-size: clamp(1.18rem, 1.45vw, 1.5rem);
+  line-height: 1.04;
   font-weight: 800;
 }
 
 .solution-card p {
-  max-width: 360px;
-  margin: 14px 0 0;
+  margin: 0;
   color: var(--brown-2);
-  font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+  font-size: clamp(0.94rem, 1.05vw, 1.02rem);
   line-height: 1.28;
 }
 
 .solution-card--wide {
-  grid-column: 2 / span 4;
-  min-height: 172px;
+  grid-column: 1 / -1;
+  min-height: 132px;
 }
 
 .history-section {
@@ -270,6 +269,7 @@ img {
 
 .history-section::after {
   position: absolute;
+  z-index: 0;
   right: 0;
   bottom: -1px;
   width: min(42vw, 520px);
@@ -369,25 +369,30 @@ img {
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  transform: translateY(-82px);
+  gap: 18px;
+  transform: translateY(-72px);
 }
 
 .trust-card {
   position: relative;
-  min-height: 330px;
-  padding: 72px 28px 30px;
-  border-radius: 0 0 18px 0;
+  display: grid;
+  min-height: 244px;
+  grid-template-columns: 58px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  align-content: start;
+  gap: 0 20px;
+  padding: 28px;
+  border-radius: 8px;
   box-shadow: var(--shadow);
 }
 
 .trust-card svg {
-  position: absolute;
-  top: -28px;
-  left: 28px;
-  width: 58px;
-  height: 58px;
-  margin-bottom: 0;
+  position: static;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  width: 54px;
+  height: 54px;
   padding: 14px;
   border-radius: 50%;
   color: var(--brown);
@@ -395,15 +400,20 @@ img {
 }
 
 .trust-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
   margin: 0;
-  font-size: clamp(1.45rem, 2vw, 2rem);
-  line-height: 0.98;
+  font-size: clamp(1.22rem, 1.55vw, 1.55rem);
+  line-height: 1.04;
 }
 
 .trust-card p {
-  margin: 24px 0 0;
-  font-size: clamp(1rem, 1.2vw, 1.15rem);
-  line-height: 1.12;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin: 28px 0 0;
+  font-size: clamp(0.98rem, 1.12vw, 1.08rem);
+  line-height: 1.22;
 }
 
 .trust-card--green {
@@ -825,6 +835,10 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .solution-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .trust-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
@@ -891,7 +905,12 @@ img {
 
   .history-section {
     margin-top: -54px;
-    padding-bottom: 72px;
+    padding-bottom: 132px;
+  }
+
+  .history-section::after {
+    width: 58vw;
+    height: 92px;
   }
 
   .history-feature {
@@ -920,6 +939,10 @@ img {
   .trust-grid {
     grid-template-columns: 1fr;
     transform: translateY(-54px);
+  }
+
+  .trust-card {
+    padding: 24px;
   }
 
   .products-copy h2,

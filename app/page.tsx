@@ -1,6 +1,7 @@
 import {
   ArrowDown,
   Clock,
+  FlaskConical,
   HandHeart,
   Handshake,
   HeartPulse,
@@ -10,6 +11,7 @@ import {
   Phone,
   Ribbon,
   ShieldCheck,
+  Sprout,
   Star,
   Tractor,
   Wheat,
@@ -71,6 +73,11 @@ export default function Home() {
               <p>Vacinas, medicamentos e cuidados para manter a criação segura.</p>
             </article>
             <article className="solution-card">
+              <Sprout aria-hidden="true" />
+              <h3>Sementes</h3>
+              <p>Variedades selecionadas para plantar com mais segurança.</p>
+            </article>
+            <article className="solution-card">
               <ShieldCheck aria-hidden="true" />
               <h3>Herbicidas e Defensivos</h3>
               <p>Produtos certos para proteger a lavoura com responsabilidade.</p>
@@ -79,6 +86,11 @@ export default function Home() {
               <Wrench aria-hidden="true" />
               <h3>Arames e Estacas</h3>
               <p>Estrutura para cercas, manejo e manutenção da propriedade.</p>
+            </article>
+            <article className="solution-card">
+              <FlaskConical aria-hidden="true" />
+              <h3>Fertilizantes</h3>
+              <p>Nutrição para lavouras mais fortes e produtivas.</p>
             </article>
             <article className="solution-card solution-card--wide">
               <Tractor aria-hidden="true" />
