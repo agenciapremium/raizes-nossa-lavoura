@@ -1,4 +1,4 @@
-import { ArrowDown, Clock, MapPin, Phone, Star } from "lucide-react";
+import { MapPin, Star } from "lucide-react";
 import { LeadForm } from "../components/lead-form";
 
 export default function Home() {
@@ -190,51 +190,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="products-section" id="produtos">
-        <div className="section-shell products-grid">
-          <div className="products-copy">
-            <h2>
-              Tudo o que o campo precisa em <span>um só lugar.</span>
-            </h2>
-            <a className="down-button" href="#localizacao" aria-label="Ver localização">
-              <ArrowDown aria-hidden="true" />
-            </a>
-            <p>
-              Nutrição animal, sementes, fertilizantes, herbicidas, vacinas e
-              muito mais para manter sua propriedade pronta para produzir.
-            </p>
-          </div>
-
-          <div className="contact-panel" id="localizacao">
-            <ul>
-              <li>
-                <MapPin aria-hidden="true" />
-                <span>Av. J.K., 1121 - Centro</span>
-              </li>
-              <li>
-                <Phone aria-hidden="true" />
-                <span>(69) 3521-2801</span>
-              </li>
-              <li>
-                <Clock aria-hidden="true" />
-                <span>Aberto a partir das 7h</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="map-frame">
-            <iframe
-              title="Mapa da Nossa Lavoura em Jaru"
-              src="https://maps.google.com/maps?hl=pt-BR&q=Nossa%20Lavoura%20-%20Jaru%2C%20Av.%20J.K.%2C%201121%20-%20Centro%2C%20Jaru%20RO&z=17&iwloc=B&output=embed"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="testimonials-section" id="depoimentos">
+<section className="testimonials-section" id="depoimentos">
         <div className="section-shell">
           <div className="testimonial-grid">
             <article className="testimonial-card">

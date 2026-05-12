@@ -404,109 +404,6 @@ img {
   background: var(--brown);
 }
 
-.products-section {
-  padding: 94px 0 110px;
-  background: var(--cream);
-}
-
-.products-grid {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  grid-template-areas:
-    "copy copy"
-    "contact map";
-  gap: 64px 72px;
-  align-items: center;
-}
-
-.products-copy {
-  grid-area: copy;
-  text-align: center;
-}
-
-.products-copy h2 {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: clamp(2.45rem, 6.2vw, 5.8rem);
-  line-height: 0.95;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.products-copy h2 span {
-  display: block;
-  font-weight: 300;
-}
-
-.down-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 74px;
-  height: 74px;
-  margin: 42px auto 38px;
-  border-radius: 8px;
-  color: var(--cream);
-  background: var(--brown);
-}
-
-.down-button svg {
-  width: 42px;
-  height: 42px;
-}
-
-.products-copy p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: clamp(1.12rem, 1.7vw, 1.55rem);
-  line-height: 1.2;
-}
-
-.contact-panel {
-  grid-area: contact;
-}
-
-.contact-panel ul {
-  display: grid;
-  gap: 24px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.contact-panel li {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: clamp(1.25rem, 2.1vw, 2rem);
-  line-height: 1.08;
-  font-weight: 700;
-}
-
-.contact-panel svg {
-  flex: 0 0 auto;
-  width: 38px;
-  height: 38px;
-  color: var(--green);
-}
-
-.map-frame {
-  grid-area: map;
-  padding: 26px;
-  border-radius: 48px;
-  background: var(--green);
-}
-
-.map-frame iframe {
-  display: block;
-  width: 100%;
-  min-height: 410px;
-  aspect-ratio: 1.24;
-  border: 0;
-  border-radius: 8px;
-  background: var(--white);
-}
-
 .testimonials-section {
   padding: 90px 0 104px;
   background: linear-gradient(to bottom, var(--cream) 0 26%, var(--brown) 26% 100%);
@@ -771,7 +668,6 @@ img {
 }
 
 @media (max-width: 1020px) {
-  .products-grid,
   .cta-grid {
     grid-template-columns: 1fr;
   }
@@ -787,13 +683,6 @@ img {
   .trust-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
-  }
-
-  .products-grid {
-    grid-template-areas:
-      "copy"
-      "contact"
-      "map";
   }
 
   .history-feature,
@@ -829,7 +718,6 @@ img {
   }
 
   .solutions-section,
-  .products-section,
   .testimonials-section,
   .cta-section {
     padding-top: 72px;
@@ -887,23 +775,8 @@ img {
     padding: 24px;
   }
 
-  .products-copy h2,
   .cta-copy h2 {
     line-height: 0.96;
-  }
-
-  .contact-panel li {
-    align-items: flex-start;
-    font-size: clamp(1.15rem, 6vw, 1.55rem);
-  }
-
-  .map-frame {
-    padding: 14px;
-    border-radius: 28px;
-  }
-
-  .map-frame iframe {
-    min-height: 320px;
   }
 
   .lead-form--footer {
