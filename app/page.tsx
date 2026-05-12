@@ -23,30 +23,16 @@ export default function Home() {
   return (
     <main className="landing-page">
       <section className="hero-section" id="inicio">
-        <div className="section-shell hero-grid">
-          <div className="hero-copy">
-            <p className="eyebrow">Nossa Lavoura</p>
-            <h1>
-              Tradição de mais de <strong>40 anos em Jaru.</strong>
-            </h1>
-            <p>
-              Cultivando confiança e prosperidade no campo com atendimento
-              próximo, produtos certos e parceria de verdade.
-            </p>
-            <a className="primary-cta" href="#formulario">
-              <span>Junte-se à família Nossa Lavoura</span>
-            </a>
-          </div>
-
-          <div className="hero-media" aria-hidden="true">
-            <img
-              src="/assets/hero-farmer.webp"
-              alt=""
-              width="790"
-              height="720"
-            />
-          </div>
-        </div>
+        <picture className="hero-banner">
+          <source media="(max-width: 760px)" srcSet="/banner-mobile.webp" />
+          <img
+            src="/banner-desktop.webp"
+            alt="A história que o agro de Jaru conhece - Nossa Lavoura"
+          />
+        </picture>
+        <a className="primary-cta hero-cta" href="#formulario">
+          <span>Junte-se à família Nossa Lavoura</span>
+        </a>
       </section>
 
       <section className="solutions-section" id="solucoes">

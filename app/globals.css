@@ -62,51 +62,20 @@ img {
 
 .hero-section {
   position: relative;
-  min-height: 700px;
-  overflow: hidden;
+  overflow: visible;
   background: var(--white);
 }
 
-.hero-section::before {
-  content: none;
-}
-
-.hero-grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(520px, 1.1fr);
-  align-items: center;
-  min-height: 700px;
-  gap: 48px;
-}
-
-.hero-copy {
-  max-width: 520px;
-  padding: 64px 0 78px;
-}
-
-.hero-copy h1 {
-  margin: 0;
-  color: var(--brown);
-  font-size: clamp(2.6rem, 4.7vw, 4.7rem);
-  line-height: 0.98;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.hero-copy h1 strong {
+.hero-banner {
   display: block;
-  margin-top: 10px;
-  font-size: 0.92em;
-  font-weight: 900;
+  width: 100%;
+  line-height: 0;
 }
 
-.hero-copy p:not(.eyebrow) {
-  max-width: 440px;
-  margin: 24px 0 30px;
-  color: var(--brown-2);
-  font-size: clamp(1.12rem, 1.45vw, 1.45rem);
-  line-height: 1.15;
+.hero-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .primary-cta {
@@ -130,24 +99,17 @@ img {
   transform: translateY(-1px);
 }
 
-.hero-media {
-  position: relative;
-  align-self: stretch;
-  min-height: 700px;
+.hero-cta {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 6;
+  transform: translate(-50%, 50%);
+  white-space: nowrap;
 }
 
-.hero-media img {
-  position: absolute;
-  top: 0;
-  right: calc((100vw - min(100vw - 48px, 1220px)) / -2);
-  bottom: auto;
-  width: auto;
-  height: 100%;
-  border-radius: 0;
-  max-width: 58vw;
-  object-fit: contain;
-  object-position: right center;
-  box-shadow: none;
+.hero-cta:hover {
+  transform: translate(-50%, calc(50% - 1px));
 }
 
 .solutions-section {
@@ -800,38 +762,9 @@ img {
 }
 
 @media (max-width: 1020px) {
-  .hero-section,
-  .hero-grid {
-    min-height: auto;
-  }
-
-  .hero-section::before {
-    content: none;
-  }
-
-  .hero-grid,
   .products-grid,
   .cta-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero-copy {
-    max-width: none;
-    padding: 64px 0 10px;
-  }
-
-  .hero-media {
-    min-height: 460px;
-  }
-
-  .hero-media img {
-    right: 0;
-    width: 100%;
-    max-width: none;
-    height: 460px;
-    transform: none;
-    border-radius: 24px 24px 0 0;
-    object-fit: contain;
   }
 
   .testimonial-grid {
@@ -877,16 +810,13 @@ img {
     width: min(100% - 32px, 1220px);
   }
 
-  .hero-copy h1 {
-    font-size: clamp(2.35rem, 12vw, 3.7rem);
-  }
-
-  .hero-media {
-    min-height: 360px;
-  }
-
-  .hero-media img {
-    height: 360px;
+  .hero-cta {
+    width: min(92vw, 360px);
+    padding: 12px 22px;
+    font-size: 0.98rem;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.1;
   }
 
   .solutions-section,
