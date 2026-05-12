@@ -189,16 +189,13 @@ img {
   box-shadow: 0 28px 44px rgba(68, 27, 20, 0.24);
 }
 
-.solution-card svg {
+.solution-card .solution-icon {
   grid-row: 1 / span 2;
   align-self: start;
   width: 54px;
   height: 54px;
-  padding: 13px;
   border-radius: 50%;
-  color: var(--cream);
-  background: var(--brown);
-  box-shadow: 0 12px 24px rgba(68, 27, 20, 0.18);
+  filter: drop-shadow(0 12px 24px rgba(68, 27, 20, 0.18));
 }
 
 .solution-card h3 {

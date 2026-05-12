@@ -1,21 +1,13 @@
 import {
   ArrowDown,
   Clock,
-  FlaskConical,
   HandHeart,
-  Handshake,
-  HeartPulse,
   ListChecks,
   MapPin,
   PackageCheck,
   Phone,
   Ribbon,
-  ShieldCheck,
-  Sprout,
   Star,
-  Tractor,
-  Wheat,
-  Wrench,
 } from "lucide-react";
 import { LeadForm } from "../components/lead-form";
 
@@ -54,37 +46,72 @@ export default function Home() {
 
           <div className="solution-grid">
             <article className="solution-card">
-              <Wheat aria-hidden="true" />
+              <img
+                className="solution-icon"
+                src="/assets/nutricao_animal.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Nutrição Animal</h3>
               <p>Rações, suplementos e orientação para fortalecer o rebanho.</p>
             </article>
             <article className="solution-card">
-              <HeartPulse aria-hidden="true" />
+              <img
+                className="solution-icon"
+                src="/assets/saude_animal.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Saúde Animal</h3>
               <p>Vacinas, medicamentos e cuidados para manter a criação segura.</p>
             </article>
             <article className="solution-card">
-              <Sprout aria-hidden="true" />
+              <img
+                className="solution-icon"
+                src="/assets/sementes.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Sementes</h3>
               <p>Variedades selecionadas para plantar com mais segurança.</p>
             </article>
             <article className="solution-card">
-              <ShieldCheck aria-hidden="true" />
+              <img
+                className="solution-icon"
+                src="/assets/herbicidas_e_defensivos.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Herbicidas e Defensivos</h3>
               <p>Produtos certos para proteger a lavoura com responsabilidade.</p>
             </article>
             <article className="solution-card">
-              <Wrench aria-hidden="true" />
+              <img
+                className="solution-icon"
+                src="/assets/arames_e_estacas.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Arames e Estacas</h3>
               <p>Estrutura para cercas, manejo e manutenção da propriedade.</p>
             </article>
             <article className="solution-card">
-              <FlaskConical aria-hidden="true" />
+              <img
+                className="solution-icon"
+                src="/assets/fertilizantes.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Fertilizantes</h3>
               <p>Nutrição para lavouras mais fortes e produtivas.</p>
             </article>
             <article className="solution-card solution-card--wide">
-              <Tractor aria-hidden="true" />
+              <img
+                className="solution-icon"
+                src="/assets/maquinarios_e_equipamentos.svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Maquinários e Equipamentos</h3>
               <p>Ferramentas e equipamentos para facilitar a rotina no campo.</p>
             </article>
