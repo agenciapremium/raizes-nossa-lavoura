@@ -4,7 +4,6 @@ import {
   HandHeart,
   ListChecks,
   MapPin,
-  PackageCheck,
   Phone,
   Ribbon,
   Star,
@@ -131,7 +130,6 @@ export default function Home() {
           </div>
 
           <div className="history-intro">
-            <PackageCheck aria-hidden="true" />
             <p>
               Em Jaru, a <strong>verdadeira história do agronegócio</strong> é
               contada por mãos que trabalham a terra e o rebanho.
