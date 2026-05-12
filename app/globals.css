@@ -100,19 +100,19 @@ img {
 }
 
 .hero-cta {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  bottom: 0;
-  z-index: 6;
-  transform: translate(-50%, 50%);
+  bottom: 24px;
+  z-index: 50;
+  transform: translateX(-50%);
   white-space: nowrap;
   box-shadow:
-    0 10px 24px rgba(68, 27, 20, 0.22),
-    0 4px 10px rgba(68, 27, 20, 0.14);
+    0 10px 24px rgba(68, 27, 20, 0.28),
+    0 4px 10px rgba(68, 27, 20, 0.18);
 }
 
 .hero-cta:hover {
-  transform: translate(-50%, calc(50% - 1px));
+  transform: translateX(-50%) translateY(-1px);
 }
 
 .solutions-section {
@@ -748,7 +748,7 @@ img {
 
 .site-footer > p {
   margin: 0;
-  padding: 30px 24px;
+  padding: 30px 24px 110px;
   color: var(--brown);
   background: var(--white);
   text-align: center;
