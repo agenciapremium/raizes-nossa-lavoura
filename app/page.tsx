@@ -1,13 +1,4 @@
-import {
-  ArrowDown,
-  Clock,
-  HandHeart,
-  ListChecks,
-  MapPin,
-  Phone,
-  Ribbon,
-  Star,
-} from "lucide-react";
+import { ArrowDown, Clock, MapPin, Phone, Star } from "lucide-react";
 import { LeadForm } from "../components/lead-form";
 
 export default function Home() {
@@ -153,7 +144,12 @@ export default function Home() {
       <section className="trust-section">
         <div className="section-shell trust-grid">
           <article className="trust-card trust-card--green">
-            <Ribbon aria-hidden="true" />
+            <img
+              className="trust-icon"
+              src="/assets/tradicao_e_confianca.svg"
+              alt=""
+              aria-hidden="true"
+            />
             <h3>Tradição e Confiança</h3>
             <p>
               Mais de 40 anos de atuação com credibilidade construída no campo.
@@ -168,14 +164,24 @@ export default function Home() {
             </p>
           </article>
           <article className="trust-card trust-card--brown">
-            <HandHeart aria-hidden="true" />
+            <img
+              className="trust-icon"
+              src="/assets/verdadeiro_parceiro.svg"
+              alt=""
+              aria-hidden="true"
+            />
             <h3>Verdadeiro Parceiro</h3>
             <p>
               Enquanto outros vêm e vão, nós sempre estivemos aqui.
             </p>
           </article>
-          <article className="trust-card trust-card--brown">
-            <ListChecks aria-hidden="true" />
+          <article className="trust-card trust-card--green">
+            <img
+              className="trust-icon"
+              src="/assets/valorizacao_pessoas.svg"
+              alt=""
+              aria-hidden="true"
+            />
             <h3>Valorização das Pessoas</h3>
             <p>
               Nosso maior patrimônio são nossos clientes e colaboradores.
