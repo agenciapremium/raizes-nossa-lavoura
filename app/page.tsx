@@ -30,8 +30,13 @@ export default function Home() {
             alt="A história que o agro de Jaru conhece - Nossa Lavoura"
           />
         </picture>
-        <a className="primary-cta hero-cta" href="#formulario">
-          <span>Junte-se à família Nossa Lavoura</span>
+        <a
+          className="primary-cta hero-cta"
+          href="https://share.google/AmBusRLB3GY5XS4QU"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Venha nos visitar</span>
         </a>
       </section>
 
