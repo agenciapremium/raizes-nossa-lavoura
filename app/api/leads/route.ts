@@ -20,15 +20,6 @@ function normalizePhone(value: string) {
   return value.replace(/\D/g, "");
 }
 
-function getWhatsappUrl(name: string) {
-  const number = process.env.WHATSAPP_NUMBER ?? "556935212801";
-  const text = encodeURIComponent(
-    `Ola, sou ${name}. Preenchi o formulario da Nossa Lavoura e quero falar com a equipe.`
-  );
-
-  return `https://wa.me/${number.replace(/\D/g, "")}?text=${text}`;
-}
-
 export async function POST(request: Request) {
   let payload: LeadPayload;
 
@@ -114,8 +105,5 @@ export async function POST(request: Request) {
     )
   `;
 
-  return NextResponse.json({
-    ok: true,
-    whatsappUrl: getWhatsappUrl(name),
-  });
+  return NextResponse.json({ ok: true });
 }

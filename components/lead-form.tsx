@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { CheckCircle2, Loader2, MessageCircle } from "lucide-react";
+import { CheckCircle2, Loader2, Send } from "lucide-react";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -40,7 +40,6 @@ export function LeadForm({ variant }: LeadFormProps) {
       const result = (await response.json()) as {
         ok?: boolean;
         message?: string;
-        whatsappUrl?: string;
       };
 
       if (!response.ok || !result.ok) {
@@ -48,12 +47,8 @@ export function LeadForm({ variant }: LeadFormProps) {
       }
 
       setState("success");
-      setMessage("Cadastro recebido. Vamos falar com voce pelo WhatsApp.");
+      setMessage("Cadastro recebido. Em breve entraremos em contato.");
       form.reset();
-
-      if (result.whatsappUrl) {
-        window.open(result.whatsappUrl, "_blank", "noopener,noreferrer");
-      }
     } catch (error) {
       setState("error");
       setMessage(
@@ -70,7 +65,7 @@ export function LeadForm({ variant }: LeadFormProps) {
       onSubmit={handleSubmit}
       noValidate
     >
-      <h2>Preencha e ganhe um voucher</h2>
+      <h2>Preencha e fique por dentro das novidades</h2>
 
       <label>
         <span>Nome</span>
@@ -104,10 +99,10 @@ export function LeadForm({ variant }: LeadFormProps) {
         ) : state === "success" ? (
           <CheckCircle2 aria-hidden="true" size={32} />
         ) : (
-          <MessageCircle aria-hidden="true" size={32} />
+          <Send aria-hidden="true" size={32} />
         )}
         <span>
-          {state === "submitting" ? "Enviando..." : "Falar no WhatsApp agora"}
+          {state === "submitting" ? "Enviando..." : "Enviar"}
         </span>
       </button>
 
