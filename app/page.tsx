@@ -251,7 +251,7 @@ export default function Home() {
       <section className="cta-section" id="formulario">
         <div className="section-shell cta-grid">
           <div className="cta-copy">
-            <h2>Junte-se à família Nossa Lavoura</h2>
+            <h2>Venha nos visitar na Nossa Lavoura Jaru</h2>
             <p>
               Nossa equipe está pronta para te atender e oferecer as melhores
               soluções para o seu negócio.
