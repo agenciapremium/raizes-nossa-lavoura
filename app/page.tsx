@@ -14,7 +14,7 @@ export default function Home() {
         </picture>
         <a
           className="primary-cta hero-cta"
-          href="https://share.google/AmBusRLB3GY5XS4QU"
+          href="https://www.google.com/maps/place/Nossa+Lavoura+-+Jaru/data=!4m2!3m1!1s0x0:0x967dd7f82dc1d75e?sa=X&ved=1t:2428&ictx=111&cshid=1778772785983630"
           target="_blank"
           rel="noopener noreferrer"
         >
