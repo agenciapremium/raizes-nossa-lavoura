@@ -162,21 +162,21 @@ img {
   position: relative;
   z-index: 4;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
-  max-width: 1120px;
+  max-width: 920px;
   margin: 62px auto 0;
 }
 
 .solution-card {
   position: relative;
   display: grid;
-  min-height: 174px;
+  min-height: 148px;
   grid-template-columns: 58px minmax(0, 1fr);
-  grid-template-rows: auto 1fr;
-  align-content: start;
-  gap: 12px 20px;
-  padding: 28px;
+  grid-template-rows: auto auto;
+  align-content: center;
+  gap: 8px 18px;
+  padding: 24px 26px;
   border: 1px solid rgba(68, 27, 20, 0.08);
   border-radius: 8px;
   background: var(--cream);
@@ -191,7 +191,7 @@ img {
 
 .solution-card .solution-icon {
   grid-row: 1 / span 2;
-  align-self: start;
+  align-self: center;
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -199,7 +199,7 @@ img {
 }
 
 .solution-card h3 {
-  align-self: center;
+  align-self: end;
   margin: 0;
   font-size: clamp(1.18rem, 1.45vw, 1.5rem);
   line-height: 1.04;
@@ -215,7 +215,7 @@ img {
 
 .solution-card--wide {
   grid-column: 1 / -1;
-  min-height: 132px;
+  min-height: 112px;
   top: 48px;
   z-index: 5;
 }
@@ -225,7 +225,7 @@ img {
   z-index: 2;
   overflow: visible;
   margin-top: -86px;
-  padding: 0 0 168px;
+  padding: 96px 0 150px;
   background:
     linear-gradient(90deg, rgba(68, 27, 20, 0.04) 0%, rgba(68, 27, 20, 0.58) 46%, rgba(68, 27, 20, 0.94) 100%),
     url("/assets/bg_secao_3.webp") center / cover no-repeat,
@@ -248,18 +248,18 @@ img {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(590px, 0.98fr) minmax(320px, 0.78fr);
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
   align-items: center;
-  gap: 70px;
-  min-height: 560px;
+  gap: clamp(36px, 5vw, 68px);
+  min-height: 0;
 }
 
 .history-photo {
-  align-self: start;
-  width: min(790px, 54vw);
-  margin-top: -72px;
-  margin-left: calc((100vw - min(100vw - 48px, 1220px)) / -2);
-  border-radius: 0 0 24px 0;
+  align-self: center;
+  width: 100%;
+  max-width: 650px;
+  margin: 0;
+  border-radius: 0 0 24px 24px;
   overflow: hidden;
   box-shadow: 0 26px 48px rgba(20, 8, 6, 0.34);
 }
@@ -273,7 +273,8 @@ img {
 }
 
 .history-intro {
-  max-width: 390px;
+  align-self: center;
+  max-width: 450px;
   color: var(--cream);
   text-align: left;
 }
@@ -290,8 +291,8 @@ img {
 
 .history-intro p {
   margin: 0;
-  font-size: clamp(1.25rem, 1.72vw, 1.72rem);
-  line-height: 1.02;
+  font-size: clamp(1.28rem, 1.78vw, 1.78rem);
+  line-height: 1.08;
   font-weight: 300;
 }
 
@@ -304,8 +305,8 @@ img {
   z-index: 1;
   display: grid;
   gap: 20px;
-  max-width: 980px;
-  padding-top: 74px;
+  max-width: 920px;
+  padding-top: 68px;
   color: var(--cream-2);
   text-align: center;
 }
@@ -698,8 +699,11 @@ img {
   .history-photo {
     width: min(720px, 100%);
     max-width: none;
-    margin-top: -34px;
-    margin-left: 0;
+    margin: 0;
+  }
+
+  .history-intro {
+    max-width: 720px;
   }
 }
 
@@ -735,6 +739,7 @@ img {
 
   .history-section {
     margin-top: -54px;
+    padding-top: 76px;
     padding-bottom: 132px;
   }
 
@@ -745,6 +750,10 @@ img {
 
   .history-feature {
     min-height: 0;
+  }
+
+  .history-intro {
+    text-align: center;
   }
 
   .history-intro svg {
