@@ -72,8 +72,8 @@ export default function Home() {
                 alt=""
                 aria-hidden="true"
               />
-              <h3>Herbicidas e Defensivos</h3>
-              <p>Produtos certos para proteger a lavoura com responsabilidade.</p>
+              <h3>Linha de herbicidas Corteva</h3>
+              <p>Produtos certos para proteger a sua pastagem com responsabilidade com a linha exclusiva Corteva Jaguar Ultra-S e Trueno XT-S.</p>
             </article>
             <article className="solution-card">
               <img
