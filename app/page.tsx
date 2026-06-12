@@ -247,12 +247,12 @@ export default function Home() {
             />
           </a>
           <div className="social-links">
-            <a href="https://www.instagram.com/" aria-label="Instagram">
+            <a href="https://www.instagram.com/nossalavouraoficial/" aria-label="Instagram">
               <svg aria-hidden="true" viewBox="0 0 24 24" role="img">
                 <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5ZM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25Zm5-2.45a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z" />
               </svg>
             </a>
-            <a href="https://www.facebook.com/" aria-label="Facebook">
+            <a href="https://www.facebook.com/nossalavouraoficial" aria-label="Facebook">
               <svg aria-hidden="true" viewBox="0 0 24 24" role="img">
                 <path d="M14.25 8.25V6.7c0-.73.52-1.2 1.35-1.2H18V2h-3.2c-3.3 0-5.05 1.85-5.05 4.85v1.4H7v3.7h2.75V22h4.5V11.95h3.05l.7-3.7h-3.75Z" />
               </svg>
