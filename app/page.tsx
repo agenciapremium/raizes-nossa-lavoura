@@ -1,5 +1,6 @@
-import { MapPin, Star } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { LeadForm } from "../components/lead-form";
+import { TestimonialCard } from "../components/testimonial-card";
 
 export default function Home() {
   return (
@@ -193,57 +194,30 @@ export default function Home() {
 <section className="testimonials-section" id="depoimentos">
         <div className="section-shell">
           <div className="testimonial-grid">
-            <article className="testimonial-card">
-              <img
-                src="/assets/testimonial-1.webp"
-                alt="Cliente produtor rural"
-                width="345"
-                height="520"
-              />
-              <p>“Sou cliente há mais de 15 anos, nunca me deixou na mão.”</p>
-              <strong>Fulano de Oliveira</strong>
-              <div className="stars" aria-label="5 estrelas">
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-              </div>
-            </article>
-            <article className="testimonial-card">
-              <img
-                src="/assets/testimonial-2.webp"
-                alt="Cliente produtora rural"
-                width="352"
-                height="520"
-              />
-              <p>“Sempre encontro orientação certa e produto de qualidade.”</p>
-              <strong>Fulano de Oliveira</strong>
-              <div className="stars" aria-label="5 estrelas">
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-              </div>
-            </article>
-            <article className="testimonial-card">
-              <img
-                src="/assets/testimonial-3.webp"
-                alt="Cliente pecuarista"
-                width="352"
-                height="520"
-              />
-              <p>“A equipe conhece a região e entende a nossa realidade.”</p>
-              <strong>Fulano de Oliveira</strong>
-              <div className="stars" aria-label="5 estrelas">
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-                <Star aria-hidden="true" />
-              </div>
-            </article>
+            <TestimonialCard
+              src="/assets/Amadeu Spanhol_1.webp"
+              alt="Amadeu Spanhol, cliente da Nossa Lavoura"
+              name="Amadeu Spanhol"
+              quote="Aqui em Jaru a gente sabe quem sempre esteve com a gente. A Nossa Lavoura é de casa, é da nossa história, por isso eu confio de olhos fechados."
+              width={345}
+              height={520}
+            />
+            <TestimonialCard
+              src="/assets/Guilherme Casa Grande_1.webp"
+              alt="Guilherme Casa Grande, cliente da Nossa Lavoura"
+              name="Guilherme Casa Grande"
+              quote="Sou cliente da Nossa Lavoura desde a abertura da primeira porta. O atendimento da equipe é muito bom e tudo o que preciso eles oferecem suporte para a minha propriedade."
+              width={352}
+              height={520}
+            />
+            <TestimonialCard
+              src="/assets/Tomas Guilherme Correia_1.webp"
+              alt="Tomas Guilherme Correia, cliente da Nossa Lavoura"
+              name="Tomas Guilherme Correia"
+              quote="Sou cliente da Nossa Lavoura desde 1983, quando iniciei na pecuária em Jaru. A loja deixou de ser apenas uma casa comercial e tornou-se um ponto de encontro dos pecuaristas. Ali nos encontramos, tomamos um cafezinho, colocamos a conversa em dia e somos sempre recebidos com atenção pelos funcionários. Com o passar dos anos, aquele espaço virou uma casa de todos nós. Estamos sempre conversando sobre a pecuária, sobre o preço do bezerro, o preço do boi gordo, e nos sentimos muito à vontade ali. Há uma coisa que também me chama a atenção: nesses 42 anos de Nossa Lavoura, tivemos apenas dois gerentes na loja. Isso demonstra a identificação dessas pessoas com os produtores rurais e com a comunidade em geral."
+              width={352}
+              height={520}
+            />
           </div>
         </div>
       </section>
