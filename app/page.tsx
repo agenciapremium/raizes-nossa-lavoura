@@ -209,6 +209,7 @@ export default function Home() {
               quote="Sou cliente da Nossa Lavoura desde a abertura da primeira porta. O atendimento da equipe é muito bom e tudo o que preciso eles oferecem suporte para a minha propriedade."
               width={352}
               height={520}
+              fit="contain"
             />
             <TestimonialCard
               src="/assets/Tomas Guilherme Correia_1.webp"

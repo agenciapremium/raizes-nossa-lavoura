@@ -11,6 +11,7 @@ type TestimonialCardProps = {
   width: number;
   height: number;
   previewLength?: number;
+  fit?: "cover" | "contain";
 };
 
 export function TestimonialCard({
@@ -21,6 +22,7 @@ export function TestimonialCard({
   width,
   height,
   previewLength = 220,
+  fit = "cover",
 }: TestimonialCardProps) {
   const [expanded, setExpanded] = useState(false);
   const isLong = quote.length > previewLength;
@@ -31,7 +33,13 @@ export function TestimonialCard({
 
   return (
     <article className="testimonial-card">
-      <img src={src} alt={alt} width={width} height={height} />
+      <img
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className={fit === "contain" ? "is-contain" : undefined}
+      />
       <p>
         “{expanded || !isLong ? quote : preview}”
         {isLong && (

@@ -430,6 +430,11 @@ img {
   object-fit: cover;
 }
 
+.testimonial-card img.is-contain {
+  object-fit: contain;
+  background: var(--cream);
+}
+
 .testimonial-card p {
   margin: 24px 0 6px;
   font-size: clamp(1rem, 1.25vw, 1.18rem);
